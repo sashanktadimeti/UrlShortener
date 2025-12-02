@@ -18,6 +18,7 @@ func ResolveURL(c *fiber.Ctx) error {
 		defer rInr.Close()
 		rInr.Incr(database.Ctx,url)
 		return c.Redirect(val, fiber.StatusTemporaryRedirect)
+		
 	}
 
 }
